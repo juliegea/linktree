@@ -1,0 +1,212 @@
+body {
+    background-color: whitesmoke;
+}
+
+.Paginas {
+    background-color: green; 
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.Links {
+    background-color: green; 
+    color: white;
+    text-align: center;
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 10px;
+    
+
+}
+
+#Lista {
+    text-align: center;
+    margin-right: 30px;
+}
+
+.div1 {
+    background-color: lightskyblue;
+    height: 500px;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.div2 {
+    background-color: whitesmoke;
+    height: 200px;
+    width: 100%;
+    display: inline-block;
+    position: relative;
+    top: 150px;
+}
+
+.div3 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 282px;
+    left: 805px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+.div4 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 410px;
+    left: 805px;
+    border-radius: 50%;
+    transform: rotate(90deg);
+}
+
+.div5 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 345px;
+    left: 735px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+
+.div6 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 345px;
+    left: 875px;
+    border-radius: 50%;
+    transform: rotate(0deg);
+}
+
+.div7 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 310px;
+    left: 736px;
+    border-radius: 50%;
+    transform: rotate(22.5deg);
+}
+
+.div8 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 282px;
+    left: 770px;
+    border-radius: 50%;
+    transform: rotate(67.5deg);
+}
+
+.div9 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 282px;
+    left: 840px;
+    border-radius: 50%;
+    transform: rotate(112.5deg);
+}
+
+.div10 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 310px;
+    left: 870px;
+    border-radius: 50%;
+    transform: rotate(157.5deg);
+}
+
+.div11 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 380px;
+    left: 870px;
+    border-radius: 50%;
+    transform: rotate(202.5deg);
+}
+
+.div12 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 410px;
+    left: 840px;
+    border-radius: 50%;
+    transform: rotate(247.5deg);
+}
+
+.div13 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 410px;
+    left: 770px;
+    border-radius: 50%;
+    transform: rotate(292.5deg);
+}
+
+.div14 {
+    background-color: gold;
+    height: 10px;
+    width: 70px;
+    display: inline-block;
+    position: absolute;
+    top: 380px;
+    left: 736px;
+    border-radius: 50%;
+    transform: rotate(337.5deg);
+}
+
+.div15 {
+    background-color: gold;
+    height: 100px;
+    width: 100px;
+    display: inline-block;
+    position: absolute;
+    top: 300px;
+    left: 790px;
+    border-radius: 50%;
+    
+}
+
+.div16 {
+    background-color: solid transparent;
+    height: 180px;
+    width: 180px;
+    display: inline-block;
+    position: absolute;
+    top: 262px;
+    left: 750px;
+    border-radius: 50%;
+    background-image: url(Imagenes/Sol_Argentina.png);
+    background-size: cover;
+}

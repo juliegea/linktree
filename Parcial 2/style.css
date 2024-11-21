@@ -1,0 +1,133 @@
+body {
+    background-image: url(Imagenes/fondo.avif);
+    background-size: cover;
+    text-align: center;
+}
+
+.foto {
+    background-color: solid transparent;
+    height: 150px;
+    width: 150px;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    background-image: url(Imagenes/foto_mia.jpeg);
+    background-size: cover;
+}
+
+.lluvia-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.gota {
+    position: absolute;
+    top: -50px;
+    width: 2px;
+    height: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    animation: caida 1s linear infinite;
+    animation-delay: calc(-1s * var(--i));
+    opacity: 0.8;
+}
+
+@keyframes caida {
+    0% {
+        transform: translateY(0);
+        opacity: 0.8;
+    }
+    100% {
+        transform: translateY(100vh);
+    }
+}
+
+.gota:nth-child(1) { left: 10%; --i: 0; }
+.gota:nth-child(2) { left: 20%; --i: 0.2; }
+.gota:nth-child(3) { left: 30%; --i: 0.4; }
+.gota:nth-child(4) { left: 40%; --i: 0.6; }
+.gota:nth-child(5) { left: 50%; --i: 0.8; }
+.gota:nth-child(6) { left: 60%; --i: 1; }
+.gota:nth-child(7) { left: 70%; --i: 1.2; }
+.gota:nth-child(8) { left: 80%; --i: 1.4; }
+.gota:nth-child(9) { left: 90%; --i: 1.6; }
+.gota:nth-child(10) { left: 95%; --i: 1.8; }
+
+h1 {
+    color: white;
+    font-size: 26px;
+    position: absolute;
+    top: 220px;
+    left: 785px;
+}
+
+h2 {
+    font-size: 22px;
+    color: white;
+    position: absolute;
+    top: 250px;
+    left: 755px;
+}
+
+.icono {
+    height: 40px;
+    width: 80px;
+    position: absolute;
+    top: 300px;
+    left: 745px;
+}
+
+.icono1 {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: 300px;
+    left: 825px;
+}
+
+.icono2 {
+    height: 40px;
+    width: 50px;
+    position: absolute;
+    top: 300px;
+    left: 895px;
+}
+
+.boton {
+    background-color: rgb(140, 170, 207);
+    height: 50px;
+    width: 700px;
+    margin: 0 auto 30px;
+    border-radius: 25px;
+    position: relative;
+    top: 370px;
+    transition: transform 0.15s cubic-bezier(0.17, 0.67, 0.29, 2.71) 0s;
+}
+
+.boton:hover {
+    background-color: rgb(111, 153, 203);
+    transform: translateX(-2px) scale(1.04);
+}
+
+.img-boton {
+    left: 5px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 41px;
+    height: 41px;
+    background-color: solid transparent;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.link-boton {
+    position: relative; 
+    top: 50%;
+    transform: translateY(-50%);
+    display: inline-block;
+    text-align: center;
+    color: white;
+    font-family: 'Times New Roman', Times, serif; 
+}
