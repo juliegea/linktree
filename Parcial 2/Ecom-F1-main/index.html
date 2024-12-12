@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Barra de Navegación Kebab</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" href="images/f1 logo.png" type="image/x-icon">
+</head>
+<body>
+  <!-- nav principal -->
+  <nav class="navbar">
+    <div>
+      <img class="logo" src="images/f1 logo.png" alt="f1">
+    </div>
+    <ul class="nav-links">
+      <li>
+        <form>
+          <input id="search-bar" class="search" type="text" placeholder="Buscar..."> 
+        </form>
+        <img class="lupa" src="images/lupa.png" alt="Lupa">
+      </li>
+      <li><a href="#" id="open-login-modal">Login</a></li>
+      <li><a href="#contact"><img class="cart-logo" src="images/Carrito.png" alt="Carrito"></a></li>
+    </ul>
+    
+    <!-- menu hamburguesa -->
+    <div class="kebab-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    </nav>
+    <div class="full-screen-menu">
+      <button class="close-btn">&times;</button>
+      <ul class="menu-links">
+        <li><a href="#home">Inicio</a></li>
+        <li>
+          <form>
+            <input id="search-bar" class="search" type="text" placeholder="Buscar...">
+          </form>
+        </li>
+        <li><a href="#" id="open-login-modal">Login</a></li>
+        <li><a href="#contact"><img class="cart-logo" src="images/Carrito.png" alt="Carrito"></a></li>
+      </ul>
+    </div>
+
+  <!-- banner principal -->
+  <div class="hero-slider">
+    <div class="slider-container">
+      <div class="slide active" style="background-image: url('images/banner1.png.jpg');"></div>
+      <div class="slide" style="background-image: url('images/banner2.png');"></div>
+      <div class="slide" style="background-image: url('images/banner3.png');"></div>
+
+    </div>
+    <button class="nav-btn prev-btn">&lt;</button>
+    <button class="nav-btn next-btn">&gt;</button>
+    <div class="dots">
+      <span class="dot active" data-index="0"></span>
+      <span class="dot" data-index="1"></span>
+      <span class="dot" data-index="2"></span>
+    </div>
+  </div>
+
+  <div class="carrusel-container">
+    <div class="carrusel-wrapper">
+      <div class="carrusel-content"><img src="images/escuderias/Alfa Romeo.png" alt="alfa romeo" data-producto="Alfa Romeo"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Alpha Tauri.png" alt="alpha tauri" data-producto="Alpha Tauri"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Alpine.png" alt="alpine" data-producto="Alpine"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Aston Martin.png" alt="aston martin" data-producto="Aston Martin"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Ferrari.png" alt="ferrari" data-producto="Ferrari"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Haas.png" alt="haas" data-producto="Haas"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Mclaren.png" alt="mclaren" data-producto="Mclaren"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Mercedes.png" alt="mercedes" data-producto="Mercedes"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Red Bull.png" alt="red bull" data-producto="Red Bull"></div>
+      <div class="carrusel-content"><img src="images/escuderias/Williams.png" alt="williams" data-producto="Williams"></div>
+    </div>
+  </div>
+  
+
+  <!-- Productos -->
+  <section id="productos" class="productos">
+    <h2>Productos Destacados</h2>
+    <div class="productos-grid">
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/camisetas/chombawilliams1.jpeg" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/camisetas/chombawilliams2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Chomba Williams</h3>
+          <p>Descripción breve del producto 1.</p>
+          <p class="precio">$30.000,00</p>
+          <button class="btn-agregar-carrito" data-producto="Chomba Williams">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/poleras/polera rb1.jpeg" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/poleras/polera rb1.2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Polera Red Bull</h3>
+          <p>Descripción breve del producto 2.</p>
+          <p class="precio">$65.000,00</p>
+          <button class="btn-agregar-carrito" data-producto="Polera Red Bull">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/camisetas/chomba mercedes1.jpeg" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/camisetas/chomba mercedes2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Chomba Mercedes</h3>
+          <p>Descripción breve del producto 3.</p>
+          <p class="precio">$30.000,00</p>
+          <button class="btn-agregar-carrito" data-producto="Chomba Mercedes">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/Camperas/campera williams1.jpeg" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/Camperas/campera williams2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Campera Williams</h3>
+          <p>Descripción breve del producto 2.</p>
+          <p class="precio">$100.000,00</p>
+          <button class="btn-agregar-carrito" data-producto="Campera Williams">Añadir al Carrito</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  
+  <div class="banner-container">
+    <div class="banner-wrapper">
+      <div class="banner-content">
+        ¡Oferta Especial Por Navidad! 50% de descuento en todos los productos de la escuderia Wiliams. ¡Solo por Esta Semana!
+      </div>
+      <div class="banner-content">
+        ¡Oferta Especial Por Navidad! 50% de descuento en todos los productos de la escuderia Wiliams. ¡Solo por Esta Semana!
+      </div>
+      <div class="banner-content">
+        ¡Oferta Especial Por Navidad! 50% de descuento en todos los productos de la escuderia Wiliams. ¡Solo por Esta Semana!
+      </div>
+    </div>
+  </div>
+  
+  <h2>Secciones</h2>
+  <div class="secciones">
+    
+    <div class="tarjeta" data-producto="chombas" onclick="redirectToProduct(this)">
+      <img src="images/uUW8WplHz_1290x760__3.jpg" alt="Chombas" />
+      <div class="texto-tarjeta">Chombas</div>
+    </div>
+    <div class="tarjeta" data-producto="camisetas" onclick="redirectToProduct(this)">
+      <img src="images/remeraSeccion.webp" alt="Camisetas" />
+      <div class="texto-tarjeta">Camisetas</div>
+    </div>
+    <div class="tarjeta" data-producto="camperas" onclick="redirectToProduct(this)">
+      <img src="images/CamperaSeccion.webp" alt="Camperas" />
+      <div class="texto-tarjeta">Camperas</div>
+    </div>
+    <div class="tarjeta" data-producto="poleras" onclick="redirectToProduct(this)">
+      <img src="images/poleraSeccion.jpg" alt="Poleras" />
+      <div class="texto-tarjeta">Poleras</div>
+    </div>
+  </div>
+  
+  <section class="banner_promo">
+  </section>
+
+  <section id="productos" class="productos">
+    <h2>Los más Vendidos</h2>
+    <div class="productos-grid">
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/poleras/polera mclaren1.webp" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/poleras/polera mercedes1.2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Polera Mclaren</h3>
+          <p>Descripción breve del producto 3.</p>
+          <p class="precio">$30.000,00</p>
+          <button class="btn-agregar-carrito" data-producto="Polera Mclaren">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/camisetas/chomba senna williams1.jpeg" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/camisetas/chomba senna williams1.2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Chomba Senna Williams</h3>
+          <p>Descripción breve del producto 2.</p>
+          <p class="precio">$45.000,00</p>
+          <button class="btn-agregar-carrito"data-producto="Chomba Senna Williams" >Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/Camperas/campera senna williams1.jpeg" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/Camperas/campera senna williams1.2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Campera Senna Williams</h3>
+          <p>Descripción breve del producto 2.</p>
+          <p class="precio">$150.000,00</p>
+          <button class="btn-agregar-carrito" data-producto="Campera Senna Williams">Añadir al Carrito</button>
+        </div>
+      </div>
+      <div class="tarjeta-producto">
+        <div class="imagen-producto">
+          <img src="Productos/Remeras/remerawilliams1.jpeg" alt="Producto 1 vista 1" class="imagen-principal"> 
+          <img src="Productos/Remeras/remerawilliams2.jpeg" alt="Producto 1 vista 2" class="imagen-hover"> 
+        </div>
+        <div class="detalle-producto">
+          <h3>Camiseta Williams</h3>
+          <p>Descripción breve del producto 1.</p>
+          <p class="precio">$25.000,00</p>
+          <button class="btn-agregar-carrito" data-producto="Camiseta Williams">Añadir al Carrito</button>
+        </div>
+      </div>
+     
+    </div>
+  </section>
+
+  <section class="banner_williams">
+    <div class="bannerWil-content">
+      <div class="bannerWil-text">
+        <h3 class="titWil">30% de descuento en williams</h3>
+        <p class="pWili">La promo por las locuras de colapinto Incluye remeras, poleras y chombas.</p>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-section">
+        <h3>Sobre Nosotros</h3>
+        <p class="pWili">Somos una tienda dedicada a ofrecer productos de calidad. ¡Gracias por visitarnos!</p>
+      </div>
+      <div class="footer-section">
+        <h3>Contáctanos</h3>
+        <ul>
+          <li class="pWili">Email: f1racingTienda@gmail.com</li>
+          <li class="pWili">Teléfono: +123 456 7890</li>
+          <li class="pWili">Dirección: UADE, Lima 757</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Ofertas Semanales</h3>
+        <ul>
+          <li class="pWili">Dias de lunes a jueves hasta 30% OFF</li>
+          <li class="pWili">Viernes de practicas GP 40% OFF en camisetas</li>
+          <li class="pWili">Domingos de carreras hasta un 50% OFF</li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h3>Síguenos</h3>
+        <div class="social-icons">
+          <a href="#"><img src="images/Facebook.png" alt="Facebook"></a>
+          <a href="https://www.instagram.com/rama_dema/"><img src="images/Instagram.png" alt="Instagram"></a>
+          <a href="#"><img src="images/TW.png" alt="Twitter"></a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2024 Tienda. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <div id="login-modal" class="modal">
+    <div class="modal-content">
+      <span id="close-login-modal" class="close-button">&times;</span>
+
+      <!-- Formulario de Login -->
+      <div id="login-form" class="form-container active">
+        <img class="form-logo" src="images/f1 logo.png" alt="">
+        <h2>Iniciar Sesión</h2>
+        <form id="login-form-element">
+          <label for="username">Usuario:</label>
+          <input type="text" id="username" placeholder="Ingresa tu usuario" required>
+          <label for="password">Contraseña:</label>
+          <input type="password" id="password" placeholder="Ingresa tu contraseña" required>
+          <button type="submit">Iniciar Sesión</button>
+        </form>
+        <p>No tienes una cuenta? <a href="#" id="go-to-register">Regístrate aquí</a></p>
+        <p id="login-error-message" class="hidden">Usuario o contraseña incorrectos</p>
+      </div>
+
+      <!-- Formulario de Registro -->
+      <div id="register-form" class="form-container hidden">
+        <img class="form-logo" src="images/f1 logo.png" alt="">
+        <h2>Crear Cuenta</h2>
+        <form id="register-form-element">
+          <label for="register-username">Usuario:</label>
+          <input type="text" id="register-username" placeholder="Crea un usuario" required>
+          <label for="register-password">Contraseña:</label>
+          <input type="password" id="register-password" placeholder="Crea una contraseña" required>
+          <button type="submit">Registrarse</button>
+        </form>
+        <p>Ya tienes una cuenta? <a href="#" id="go-to-login">Inicia sesión aquí</a></p>
+        <p id="register-error-message" class="hidden">Error al crear la cuenta</p>
+      </div>
+    </div>
+  </div>
+
+    <!-- Carrito de compras -->
+  <div class="cart-sidebar" id="cart-sidebar">
+    <button class="close-cart-btn">&times;</button>
+    <h2>Carrito</h2>
+    <ul id="cart-items">
+      <!-- Los items del carrito se agregarán aquí dinámicamente -->
+    </ul>
+    <p class="total">Total: $0.00</p>
+  </div>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
